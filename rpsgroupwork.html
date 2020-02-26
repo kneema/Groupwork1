@@ -22,17 +22,50 @@ while (Choice!=="Rock"&&Choice!=="Paper"&&Choice!=="Scissors"&&Choice!=="rock"&&
 }
     //To scrub variable choice to make sure it's all lower
 
-var scrubchoice = choice.toLowercase()
+var player1 = choice.toLowercase()
 
     //Computer choice, randomized array
-var compchoice = ["rock","paper","scissors"]
+var player2 = ["rock","paper","scissors"]
 for (var i = 0, i < compchoice.length; i++) {
-var random = Math.floor(Math.random())
+var player1 = Math.floor(Math.random())
 }
 
 
 
     // Rules
+
+    // player 1 has rock or paper or scissors
+// player 2 has rock or paper or scissors
+
+if (player1 === player2) {
+    result = "It is a draw";
+
+} else {
+
+    if (player1 === "rock") {
+        if (player2 === "scissors") {
+            result = "You win";
+        } else {
+            result = "You Lose";
+        }
+    }
+
+    if (player1 === "scissors") {
+        if (player2 === "paper") {
+            result = "You win";
+        } else {
+            result = "You Lose";
+        }
+    }
+
+    if (player1 === "paper") {
+        if (player2 === "rock") {
+            result = "You win";
+        } else {
+            result = "You Lose";
+        }
+    }
+}
 
     // Output
 
