@@ -14,6 +14,23 @@
 
     // Game Play/ Choice
 
+    //To prompt user for a correct answer
+
+var Choice = prompt("Rock, Paper, or Scissors?")
+while (Choice!=="Rock"&&Choice!=="Paper"&&Choice!=="Scissors"&&Choice!=="rock"&&Choice!=="paper"&&Choice!=="scissors") {
+    Choice = prompt("Rock, Paper, or Scissors?")
+}
+    //To scrub variable choice to make sure it's all lower
+
+var scrubchoice = choice.toLowercase()
+
+    //Computer choice, randomized array
+var compchoice = ["rock","paper","scissors"]
+for (var i = 0, i < compchoice.length; i++) {
+var random = Math.floor(Math.random())
+}
+
+
 
     // Rules
 
